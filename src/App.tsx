@@ -193,7 +193,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-6 text-foreground">Professional Summary</h3>
-                <p className="text-foreground/90 leading-relaxed text-lg italic">
+                <p className="text-foreground/90 leading-relaxed text-lg">
                   "Detail-oriented QA Engineer with strong expertise in Manual Testing, SEO Testing, Python automation, and Web Scraping. 
                   Experienced in validating SEO elements including meta tags, heading structures, canonical tags, and page indexing. 
                   Proficient in SDLC, STLC, and defect management using Jira. Skilled in keyword research, on-page optimization, and local SEO strategies. 
@@ -271,8 +271,13 @@ export default function App() {
                   <span className="text-xs font-bold px-3 py-1 bg-primary/10 text-primary rounded-full uppercase tracking-wider">SEO Testing & Activities</span>
                 </div>
                 <p className="text-foreground/80 leading-relaxed">
-                  Worked on SEO activities for an AI-powered hyperlocal marketing platform. Performed keyword research, optimized content for search visibility, supported local SEO strategies, and conducted comprehensive SEO testing including meta tag validation, heading structure compliance, URL and canonical tag verification, and sitemap accuracy checks.
-                </p>
+                Worked on SEO activities for an AI-powered hyperlocal marketing platform. 
+                Performed keyword research, optimized content for search visibility, 
+                supported local SEO strategies, and conducted comprehensive SEO testing including meta tag validation,
+                heading structure compliance, URL and canonical tag verification, and sitemap accuracy checks.
+                Additionally executed website data scraping using Python basics to gather hyperlocal business data for enhanced content optimization.
+</p>
+
               </motion.div>
             </div>
           </div>
@@ -330,24 +335,6 @@ export default function App() {
                 ))}
               </div>
             </div>
-
-            {/* Identity Details */}
-            <div>
-              <SectionHeading>Identity Details</SectionHeading>
-              <div className="glass rounded-2xl overflow-hidden border border-border">
-                {[
-                  { label: "Date of Birth", value: "20 August 1999" },
-                  { label: "Gender", value: "Male" },
-                  { label: "Languages", value: "Tamil, English" },
-                  { label: "Nationality", value: "Indian" }
-                ].map((detail, idx) => (
-                  <div key={idx} className={`p-4 flex justify-between items-center ${idx !== 3 ? 'border-b border-border' : ''}`}>
-                    <span className="text-sm font-medium text-foreground/50">{detail.label}</span>
-                    <span className="text-sm font-bold text-foreground uppercase">{detail.value}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -361,10 +348,10 @@ export default function App() {
           </div>
           
           <div className="flex items-center gap-6 text-foreground">
-            <a href="#" className="p-3 rounded-full glass hover:text-primary transition-colors cursor-pointer">
+            <a href="https://www.linkedin.com/in/yuva-rajan-201a52342" className="p-3 rounded-full glass hover:text-primary transition-colors cursor-pointer">
               <Linkedin size={20} />
             </a>
-            <a href="#" className="p-3 rounded-full glass hover:text-primary transition-colors cursor-pointer">
+            <a href="https://github.com/yuvarajan471-code" className="p-3 rounded-full glass hover:text-primary transition-colors cursor-pointer">
               <Github size={20} />
             </a>
             <a href="mailto:yuvarajan471@gmail.com" className="p-3 rounded-full glass hover:text-primary transition-colors cursor-pointer">
